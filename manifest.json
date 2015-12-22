@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "Ruler",
+    "description": "This extension shows a ruler on current page",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "background": {        
+        "scripts": ["js/background.js"],        
+        "persistent": false
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["js/jquery.min.js", "js/jquery-ui.min.js","js/addrule.js"]
+    }]
+}
