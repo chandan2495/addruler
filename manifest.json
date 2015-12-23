@@ -18,5 +18,6 @@
     "content_scripts": [{
         "matches": ["http://*/*", "https://*/*"],
         "js": ["js/jquery.min.js", "js/jquery-ui.min.js","js/addrule.js"]
-    }]
+    }],
+    "web_accessible_resources" : ["img/horizontal.jpg","img/vertical.jpg"]
 }
